@@ -10,20 +10,25 @@ An unofficial python wrapper for the Facebook face recognition endpoint
 3. The recognize method takes 4 input args and returns an array of recognitions.
 4. To get the access token simply go to https://developers.facebook.com/tools/explorer and get a user access token with *user_photos*, *publish_actions* and *user_posts* permissions.
 5. Get your Facebook cookie and fb_dtsg token as follows:
-...Go to your Facebook profile.
-...Open chrome dev tools by `Right Click > Inspect`
-...Upload any picture. As it gets uploaded monitor the Network tab for 'dpr?' endpoint.
-...Click on it. Scroll down to *Request Header*. Copy the entire cookie string.
-...Scroll further down to *Form Data*. Copy the value of fb_dtsg parameter.
+
+  * Go to your Facebook profile.
+
+ * Open chrome dev tools by `Right Click > Inspect`
+
+ * Upload any picture. As it gets uploaded monitor the Network tab for 'dpr?' endpoint.
+
+ * Click on it. Scroll down to *Request Header*. Copy the entire cookie string.
+
+ * Scroll further down to *Form Data*. Copy the value of fb_dtsg parameter.
 
 6. Call the recognize method with the following parameters.
-```
+
+```python
+
 from fbrecog import recognize
 path = '1.jpg'
 access_token = '#######' #Insert your access token obtained from Graph API explorer here
 cookie = '###' #Insert your cookie string here
 fb_dtsg = '###' #Insert the fb_dtsg parameter obtained from Form Data here.
-
-
 print(recognize(path,access_token,cookie,fb_dtsg))
 ```
