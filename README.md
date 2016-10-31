@@ -26,7 +26,7 @@ An unofficial python wrapper for the Facebook face recognition endpoint
 ```python
 
 from fbrecog import recognize
-path = '1.jpg'
+path = '1.jpg' #Insert your image file path here
 access_token = '#######' #Insert your access token obtained from Graph API explorer here
 cookie = '###' #Insert your cookie string here
 fb_dtsg = '###' #Insert the fb_dtsg parameter obtained from Form Data here.
