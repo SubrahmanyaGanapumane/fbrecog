@@ -17,7 +17,7 @@ def recognize(path,access_token,cookies,fb_dtsg):
 
 	URL = "https://www.facebook.com/photos/tagging/recognition/?dpr=1"
 	
-	graph = GraphAPI(token)
+	graph = GraphAPI(access_token)
 	
 	#Uploading the picture to Facebook	
 	post_id = graph.post( path = 'me/photos', source = open(path, 'rb'))['id']
