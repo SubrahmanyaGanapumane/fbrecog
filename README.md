@@ -32,3 +32,6 @@ cookie = '###' #Insert your cookie string here
 fb_dtsg = '###' #Insert the fb_dtsg parameter obtained from Form Data here.
 print(recognize(path,access_token,cookie,fb_dtsg))
 ```
+##Please star this repo if it helped :)
+
+![star](http://i.imgur.com/Uhx7FOA.png)
